@@ -7,6 +7,12 @@ html {
         margin: 0;
 
         header {
+            position: sticky;
+            top: 0;
+            z-index: 9999;
+            background: #000000E6;
+
+
             .logo {
                 @media screen and (max-width: 767px) {
                     margin: auto;
@@ -188,7 +194,7 @@ html {
         .duracao {
             font-size: 1.125rem;
             border: white 1px solid;
-            width: 128px;
+            min-width: 128px;
             max-width: 40vw;
             border-radius: 3px;
             text-align: center;
@@ -196,7 +202,7 @@ html {
             align-items: center;
             justify-content: center;
             height: 2rem;
-            padding: 1rem 0 0.7rem 0;
+            padding: 1rem 1rem 0.7rem 1rem;
 
             @media screen and (max-width: 767px) {
                 font-size: 0.75rem;
@@ -267,7 +273,7 @@ html {
                 }
 
             }
-            
+
         }
     }
 
@@ -339,9 +345,10 @@ html {
                 }
 
             }
-            &:hover{
-                h3{
-                    color:#FF0000;
+
+            &:hover {
+                h3 {
+                    color: #FF0000;
                 }
             }
         }

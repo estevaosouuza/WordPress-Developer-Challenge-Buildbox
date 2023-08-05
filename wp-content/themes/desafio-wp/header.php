@@ -16,6 +16,10 @@ $taxonomy = get_queried_object() ?? '';
     <link rel="stylesheet" href="<?= $themeUrl ?>/assets/css/style.css">
     <link rel="stylesheet" href="<?= $themeUrl ?>/assets/framework/bootstrap-5.3/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="<?= $themeUrl ?>/assets/framework/splide-4.1.3/dist/css/splide.min.css">
+
+    <!-- Inclua os scripts e estilos do plyr.io -->
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.6.8/plyr.css">
+    <script src="https://cdn.plyr.io/3.6.8/plyr.js"></script>
 </head>
 
 
@@ -31,17 +35,17 @@ $taxonomy = get_queried_object() ?? '';
                 <div class="col-md-6 d-flex algin-items-center">
                     <ul class="menu d-flex flex-row justify-content-md-end justify-content-center gap-5 w-100 align-items-center mb-0 px-0">
                         <li>
-                            <a href="<?= get_term_link(get_term_by('slug', 'filmes', 'video_type')); ?>" class= <?= $taxonomy->name == 'Filmes' ? 'active' : '';?> >
+                            <a href="<?= get_term_link(get_term_by('slug', 'filmes', 'video_type')); ?>" class=<?= $taxonomy->name == 'Filmes' ? 'active' : ''; ?>>
                                 <span class="icon-ico-filmes"></span>
                                 Filmes</a>
                         </li>
                         <li>
-                            <a href="<?= get_term_link(get_term_by('slug', 'documentarios', 'video_type')); ?>" class= <?= $taxonomy->name == 'Documentários' ? 'active' : '';?> >
+                            <a href="<?= get_term_link(get_term_by('slug', 'documentarios', 'video_type')); ?>" class=<?= $taxonomy->name == 'Documentários' ? 'active' : ''; ?>>
                                 <span class="icon-ico-documentarios"></span>
                                 Documentários</a>
                         </li>
                         <li>
-                            <a href="<?= get_term_link(get_term_by('slug', 'series', 'video_type')); ?>" class= <?= $taxonomy->name == 'Séries' ? 'active' : '';?> >
+                            <a href="<?= get_term_link(get_term_by('slug', 'series', 'video_type')); ?>" class=<?= $taxonomy->name == 'Séries' ? 'active' : ''; ?>>
                                 <span class="icon-ico-series"></span>
                                 Series</a>
                         </li>

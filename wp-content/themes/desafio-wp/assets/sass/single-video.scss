@@ -1,0 +1,67 @@
+#single-video {
+
+    h1 {
+        letter-spacing: -2.8px;
+        font-size: 4.375rem;
+        color: white;
+        line-height: 100%;
+        margin-bottom: 3rem;
+        font-weight: 900;
+        @media screen and (max-width: 767px) {
+            font-size: 1.75rem;
+            letter-spacing: -1.12px;
+        }
+
+    }
+    .descricao{
+        font-size: 1.125rem;
+        color: white;
+        @media screen and (max-width: 767px) {
+            font-size: 0.75rem;
+        }
+    }
+
+
+    #player {
+        .plyr__poster {
+            background-position: center;
+            background-size: cover;
+        }
+
+        iframe {
+            border-radius: 3px;
+        }
+
+        .plyr__control--overlaid {
+            background: #FFFFFF;
+            min-width: 6vw;
+            min-height: 6vw;
+        }
+
+
+        .plyr__control--overlaid svg {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: auto;
+            height: 3vw;
+            width: 3vw;
+            fill: #000000b5;
+        }
+    }
+
+    .plyr--full-ui input[type=range] {
+        color: #F44336 !important;
+    }
+
+    .plyr--video .plyr__control.plyr__tab-focus,
+    .plyr--video .plyr__control:hover,
+    .plyr--video .plyr__control[aria-expanded=true] {
+        background: #F44336 !important;
+    }
+
+
+
+
+}
